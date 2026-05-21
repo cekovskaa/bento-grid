@@ -1,0 +1,497 @@
+body {
+  font-family: "DM-sans", sans-serif;
+  background-color: #f5f5f5;
+}
+
+p {
+  font-size: 18px;
+}
+
+.container-80 {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.bento-grid {
+  margin-block: 80px;
+}
+
+/* Match col-9 height to col-3 */
+.bento-row {
+  align-items: stretch;
+}
+
+.bento-col-left,
+.bento-col-right {
+  min-height: 0;
+}
+
+.bento-col-left {
+  gap: 1rem;
+}
+
+.bento-col-right {
+  gap: 1rem;
+}
+
+.bento-row-top,
+.bento-row-bottom {
+  min-height: 0;
+}
+
+.bento-col-mid {
+  min-height: 0;
+  gap: 1rem;
+}
+
+.bento-col-left .custom-card,
+.bento-col-right .custom-card {
+  min-height: 0;
+}
+
+.custom-card {
+  border: none;
+  border-radius: 13px;
+}
+
+.card-a {
+  background-color: #faeee2;
+  padding-inline: 28px;
+  padding-block: 50px;
+}
+
+.title-custom {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+  word-spacing: -0.06em;
+  letter-spacing: -0.06em;
+}
+
+.purple-span {
+  color: #6459dc;
+}
+
+.card-b {
+  background-color: #ffcc68;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-block: 10px;
+}
+
+.row-first {
+  flex-direction: column;
+}
+
+.card-c {
+  background-color: #7552dc;
+  padding-inline: 10px;
+  padding-block: 40px;
+  border-radius: 10px;
+}
+
+.card-c .card-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: white;
+}
+
+.card-c .card-text {
+  color: #f0daff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.yellow-span {
+  color: #ffcc60;
+}
+
+.stars-img {
+  width: 30%;
+}
+
+.card-d {
+  background-color: #fefeff;
+  padding-inline: 20px;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.card-d__media {
+  overflow: hidden;
+  margin-inline: -20px;
+  margin-top: -10px;
+  padding-left: 20px;
+}
+
+.card-d__media img {
+  display: block;
+  width: 118%;
+  max-width: none;
+}
+
+.card-d .card-title,
+.card-e .card-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-e {
+  padding-inline: 20px;
+  padding-top: 10px;
+  overflow: hidden;
+  background-color: #ffcc68;
+}
+
+.card-e .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  padding-block: 0;
+  padding-top: 10px;
+}
+
+.card-e__media {
+  overflow: hidden;
+  margin-top: -60px;
+  margin-inline: -20px;
+  margin-bottom: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-img {
+  display: block;
+  width: 86%;
+  max-width: none;
+  transform: translateY(40%);
+}
+
+.card-g {
+  background-color: hsl(254, 88%, 90%);
+  padding-left: 30px;
+  padding-block: 20px;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.card-g .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.card-g__media {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+  margin-inline: -20px;
+  margin-top: 1rem;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-g__text {
+  flex-shrink: 0;
+  margin: 0.75rem 0 0;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.schedule-img {
+  display: block;
+  width: 188%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.card-f {
+  padding: 20px;
+}
+
+.card-f .card-title {
+  font-size: 60px;
+}
+
+.card-f p {
+  font-size: 17px;
+}
+
+.card-f img {
+  width: 70%;
+}
+
+.card-h {
+  background-color: #7552dc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-h__inner {
+  width: 100%;
+  margin: 0;
+}
+
+.card-h img {
+  max-width: 100%;
+}
+
+.card-h .card-title {
+  color: white;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
+
+/* 425px and below */
+@media (max-width: 425px) {
+  .container-80 {
+    width: 100%;
+    padding-inline: 1.25rem;
+  }
+
+  .bento-grid {
+    margin-block: 2rem;
+  }
+
+  .bento-row {
+    flex-direction: column;
+  }
+
+  .bento-col-left,
+  .bento-col-right {
+    gap: 1rem;
+  }
+
+  .bento-row-top,
+  .bento-row-bottom {
+    flex: none !important;
+  }
+
+  .bento-col-left .flex-lg-fill,
+  .bento-col-mid .flex-lg-fill,
+  .bento-row-top .flex-lg-fill,
+  .bento-row-bottom .flex-lg-fill {
+    flex: none !important;
+  }
+
+  .card-a,
+  .card-b {
+    padding-inline: 1.25rem;
+    padding-block: 2rem;
+  }
+
+  .title-custom {
+    font-size: 2rem;
+  }
+
+  .card-c {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+  }
+
+  .card-c .card-title {
+    font-size: 2.75rem;
+  }
+
+  .card-c .card-text {
+    font-size: 0.9375rem;
+  }
+
+  .stars-img {
+    width: 45%;
+  }
+
+  .card-d .card-title,
+  .card-e .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-d__media img {
+    width: 110%;
+  }
+
+  .calendar-img {
+    width: 80%;
+    transform: translateY(30%);
+  }
+
+  .card-g {
+    padding-inline: 1.25rem;
+    padding-block: 1.25rem;
+  }
+
+  .card-g__media {
+    flex: none;
+    min-height: 12rem;
+    margin-top: 0.75rem;
+  }
+
+  .schedule-img {
+    width: 140%;
+    height: 100%;
+  }
+
+  .card-g__text {
+    font-size: 0.9375rem;
+  }
+
+  .card-f .card-title {
+    font-size: 3rem;
+  }
+
+  .card-f p {
+    font-size: 1rem;
+  }
+
+  .card-f img {
+    width: 55%;
+  }
+
+  .card-h {
+    padding: 1.25rem;
+  }
+
+  .card-h__inner {
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .card-h .title-custom {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .card-h img {
+    max-width: 85%;
+    margin-inline: auto;
+  }
+}
+
+/* 375px and below */
+@media (max-width: 375px) {
+  .container-80 {
+    padding-inline: 1rem;
+  }
+
+  .bento-grid {
+    margin-block: 1.5rem;
+  }
+
+  .title-custom {
+    font-size: 1.75rem;
+  }
+
+  .card-c .card-title {
+    font-size: 2.375rem;
+  }
+
+  .card-d .card-title,
+  .card-e .card-title {
+    font-size: 1.375rem;
+  }
+
+  .card-g__media {
+    min-height: 10rem;
+  }
+
+  .schedule-img {
+    width: 150%;
+  }
+
+  .card-f .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card-h .title-custom {
+    font-size: 1.5rem;
+  }
+}
+
+/* 320px and below */
+@media (max-width: 320px) {
+  .container-80 {
+    padding-inline: 0.75rem;
+  }
+
+  .bento-col-left,
+  .bento-col-right {
+    gap: 0.75rem;
+  }
+
+  .title-custom {
+    font-size: 1.5rem;
+  }
+
+  .card-a,
+  .card-b {
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+  }
+
+  .card-c {
+    padding-block: 1.5rem;
+  }
+
+  .card-c .card-title {
+    font-size: 2rem;
+  }
+
+  .card-c .card-text {
+    font-size: 0.875rem;
+  }
+
+  .card-d,
+  .card-e {
+    padding-inline: 1rem;
+  }
+
+  .card-d .card-title,
+  .card-e .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-g {
+    padding-inline: 1rem;
+  }
+
+  .card-g__media {
+    min-height: 9rem;
+  }
+
+  .card-g__text {
+    font-size: 0.875rem;
+  }
+
+  .card-f {
+    padding: 1rem;
+  }
+
+  .card-f .card-title {
+    font-size: 2.25rem;
+  }
+
+  .card-f p {
+    font-size: 0.9375rem;
+  }
+
+  .card-h {
+    padding: 1rem;
+  }
+
+  .card-h .title-custom {
+    font-size: 1.375rem;
+  }
+}
